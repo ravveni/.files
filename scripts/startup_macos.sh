@@ -5,9 +5,9 @@ sudo xcode-select --install;
 
 # Configs
 mkdir ~/.config;
-cp -r ./configs/kitty ~/.config/;
-cp -r ./configs/nvim ~/.config/;
-echo "copy directoy from default cmus to cmus/autosave before replacing"
+cp -r ./config/kitty ~/.config/;
+cp -r ./config/nvim ~/.config/;
+echo "Copy directory from default cmus to cmus/autosave before replacing"
 
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
@@ -19,6 +19,7 @@ brew install httpie;
 brew install lua;
 brew install neovim;
 brew install node;
+brew install ollama;
 brew install tree;
 brew install wget;
 
@@ -36,7 +37,6 @@ casks=(
     "kitty"
     "kiwix"
     "libreoffice"
-    "lm-studio"
     "love"
     "vlc"
 )
@@ -64,6 +64,5 @@ done
 
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
-cp ./configs/.zshrc ~/;
+cp ./config/.zshrc ~/;
 source ~/.zshrc;
-
