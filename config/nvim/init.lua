@@ -7,6 +7,7 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 
 vim.opt.cursorcolumn = false
+vim.opt.cursorline = true
 vim.opt.signcolumn = "yes"
 
 vim.opt.ignorecase = true
@@ -17,6 +18,8 @@ vim.opt.undofile = true
 vim.opt.winborder = "rounded"
 vim.opt.wrap = false
 
+vim.opt.updatetime = 250
+
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
@@ -24,7 +27,6 @@ vim.g.maplocalleader = "\\"
 vim.lsp.enable({
   "clangd",
   "lua_ls",
-  "prettier",
   "pyright",
   "rust_analyzer",
   "ts_ls"
@@ -55,6 +57,8 @@ require("config.lazy")
 
 -- Keymap
 local map = vim.keymap.set
+map('n', '<Esc>', '<cmd>nohlsearch<CR>')
+map('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list'})
 map('n', '<leader>e', ":Oil<CR>")
 map('n', '<leader>f', ":Telescope find_files<CR>")
 map('n', '<leader>lf', vim.lsp.buf.format)
