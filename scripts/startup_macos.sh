@@ -14,13 +14,18 @@ echo "Copy directory from default cmus to cmus/autosave before replacing"
 
 ## Formulae
 brew install cmus;
+brew install fd;
 brew install ffmpeg;
 brew install httpie;
 brew install lua;
+brew install luarocks;
 brew install neovim;
 brew install node;
 brew install ollama;
+brew install ripgrep;
 brew install tree;
+brew install tree-sitter-cli;
+brew install utftex;
 brew install wget;
 
 ## Casks
@@ -38,6 +43,7 @@ casks=(
     "kiwix"
     "libreoffice"
     "love"
+    "ultimaker-cura"
     "vlc"
 )
 
