@@ -2,7 +2,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export LIBRARY_PATH="$LIBRARY_PATH:/opt/local/lib/"
 export PATH="/opt/homebrew/bin:$PATH"
 
-ZSH_THEME="fox"
+ZSH_THEME="jonathan"
 
 # Plugins
 plugins=(git)
@@ -14,6 +14,7 @@ alias kconf="nvim ~/.config/kitty/kitty.conf"
 alias nconf="nvim ~/.config/nvim/init.lua"
 alias zconf="nvim ~/.zshrc"
 alias ez="source ~/.zshrc"
+alias svconf="cp -r ~/.config/cmus ~/.files/config/; cp -r ~/.config/kitty ~/.files/config/; cp -r ~/.config/nvim ~/.files/config/; cp -r ~.zshrc ~/.files/config/;"
 
 ## Git
 alias gst="git status"
@@ -39,4 +40,7 @@ alias pip="pip3"
 
 ## Rust
 alias rbook="rustup doc"
+
+# Utilities
+alias chat="python3 -m http.server -d ~/_dev/chat --bind 127.0.0.1 8081"
 
