@@ -5,8 +5,8 @@ sudo xcode-select --install;
 
 # Configs
 mkdir ~/.config;
-cp -r .files/config/kitty ~/.config/;
-cp -r .files/config/nvim ~/.config/;
+cp -r ./config/kitty ~/.config/;
+cp -r ./config/nvim ~/.config/;
 echo "Copy directory from default cmus to cmus/autosave before replacing"
 
 # Homebrew
