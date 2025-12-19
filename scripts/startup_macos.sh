@@ -22,6 +22,7 @@ brew install luarocks;
 brew install neovim;
 brew install node;
 brew install ollama;
+brew install pastel;
 brew install ripgrep;
 brew install tree;
 brew install tree-sitter-cli;
