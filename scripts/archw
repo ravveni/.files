@@ -1,0 +1,9 @@
+if [ -z "$1" ]; then
+  echo "Usage: $0 <search_term>"
+  exit 1
+fi
+
+arch_wiki_search="https://wiki.archlinux.org/index.php?search="
+url="$arch_wiki_search$1"
+
+firefox "$url"
